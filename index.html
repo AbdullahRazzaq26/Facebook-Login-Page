@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +8,138 @@
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: rgb(239, 239, 239);
+            background-color: #f0f2f5;
         }
+
         div {
             display: inline-block;
         }
+
         .login input {
-            background-color: #4267B2            ;
+            background-color: #0866ff;
             color: white;
-            border: 0px solid;
+            border: none;
             padding: 12px 104px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: bolder;
+            width: 332px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0px 16px;
+            box-sizing: content-box;
         }
+
         .forget input {
             background-color: transparent;
             border: 0px solid;
-            color: #4267B2;
+            color: #0866ff;
             cursor: pointer;
-            font-weight: bolder;
+            font-weight: 500;
+            font-size: 14px;
         }
+
         .new input {
-            background-color: rgb(30, 174, 102);
-            border: 0px solid;
-            padding: 15px 20px;
-            border-radius: 5px;
+            background-color: #42b72a;
+            border: none;
+            padding: 0px 16px;
+            box-sizing: content-box;
+            line-height: 50px;
+            font-size: 17px;
+            border-radius: 6px;
             cursor: pointer;
             color: white;
-            font-weight: bolder;
-
+            font-weight: bold;
+            margin-top: 6px;
         }
+
         .email input {
-            padding: 6px;
-            border-radius: 5px;
-            border: 1px solid;
-            width: 225px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            width: 330px;
+            font-size: 17px;
+            padding: 14px 16px;
 
         }
+
         .pass input {
-            padding: 6px;
-            border-radius: 5px;
-            border: 1px solid;
-            width: 225px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            width: 330px;
+            font-size: 17px;
+            padding: 14px 16px;
+
         }
-        
+
         .facebook {
-            color: #4267B2;
+            color: #0866ff;
             font-weight: bolder;
-            font-size: 65px;
+            font-size: 55px;
+            margin-bottom: 0px;
         }
+
         .right {
-            margin-left: 550px;
-            background-color: white;
-            padding: 20px 45px;
-            border-radius: 5px;
-            margin-top: 220px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;     
-         }
-         .left {
-            padding-left: 75px;
-         }
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            box-sizing: border-box;
+            margin: 40px 0 0;
+            padding: 20px 10 28px;
+            width: 396px;
+            position: absolute;
+            left: 560px;
+            top: -20px;
+        }
+
+        .line {
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            display: flex;
+            margin: 20px 16px;
+            text-align: center;
+        }
+
+        .left {
+            
+            position: absolute;
+
+        }
+
+        .left p {
+            font-size: 24px;
+            line-height: 28px;
+            width: auto;
+        }
+        .main {
+            position: absolute;
+            display: inline;
+            margin-left: 25%;
+            top: 12%;
+            
+        }
     </style>
 </head>
+
 <body>
-    <div class="left">
-    <h1 class="facebook">facebook</h1>
-    <p><b>Connect with friends and the world <br>
-    around you on Facebook</b></p>
-</div>
-<div class="right">
-    <center>
-    <p class="email"><input type="text" placeholder="Email or Phone Number"></p>
-    <p class="pass"><input type="text" placeholder="Password"></p>
-    <p class="login"><input type="button" value="Login"></p>
-    <p class="forget"><input type="button" value="Forget Password?"></p>
-    <hr>
-    <p class="new"><input type="button" value="Create New Account"></p>
-</center>
-</div>
+    <div class="main">
+        
+        <div class="left">
+            <h1 class="facebook">facebook</h1>
+            <p>Facebook helps you connect and share<br>
+                with the people in your life.</p>
+        </div>
+        <div class="right">
+            <center>
+                <p class="email"><input type="text" placeholder="Email or Phone Number"></p>
+                <p class="pass"><input type="text" placeholder="Password"></p>
+                <p class="login"><input type="button" value="Log in"></p>
+                <p class="forget"><input type="button" value="Forget Password?"></p>
+                <div class="line"></div>
+                <p class="new"><input type="button" value="Create New Account"></p>
+            </center>
+        </div>
+    </div>
 </body>
+
 </html>
